@@ -23,6 +23,13 @@
         }
       </style>
     </noscript>
+
+    <script>
+
+      function downloadFile(){
+        this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML);
+      }      
+    </script>
   </head>
   <body id="top">
     <header class="d-print-none">
@@ -58,7 +65,7 @@
         <h2 class="h1 mt-2" data-aos="fade-left" data-aos-delay="0">Rania EL ABDELLAOUI</h2>
         <p data-aos="fade-left" data-aos-delay="100">Web Developer</p>
         <div class="d-print-none" data-aos="fade-left" data-aos-delay="200">
-          <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="this.href='data:text/html;charset=UTF-8,'+encodeURIComponent(document.documentElement.outerHTML)" href="#" download="page.html">Download CV</a><a class="btn btn-success shadow-sm mt-1" href="#contact">Hire Me</a></div>
+          <a class="btn btn-light text-dark shadow-sm mt-1 me-1" onclick="downloadFile()" href="#" download="page.html">Download CV</a><a class="btn btn-success shadow-sm mt-1" href="#contact">Hire Me</a></div>
       </div>
     </div>
   </div>
